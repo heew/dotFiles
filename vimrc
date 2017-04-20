@@ -15,6 +15,9 @@
     if has("autocmd")
         autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
     endif
+
+    " shell, I use bash
+    set shell=/usr/bin/bash
 " }
 
 " indentation settings {
