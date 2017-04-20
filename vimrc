@@ -1,5 +1,8 @@
 " one liner to update vimrc (paste and run after)
-" $ cp ~/.vimrc ~/.vimrc.bak && DATA_VIMRC=$(curl -sL https://raw.githubusercontent.com/heew/dotFiles/master/vimrc) && echo -n "$DATA_VIMRC" |base64 -w0 |perl -pe "s/^/echo -n /g" |perl -pe "s/$/ \|base64 \-d \> \~\/\.vimrc/g" |bash
+" $ cp ~/.vimrc ~/.vimrc.bak && curl -sL https://raw.githubusercontent.com/heew/dotFiles/master/vimrc -o ~/.vimrc
+"
+" To get oneliner with base64 string into clipoard (for pasting on remote server for updating):
+" $ DATA_VIMRC=$(curl -sL https://raw.githubusercontent.com/heew/dotFiles/master/vimrc) && echo -n "$DATA_VIMRC" |base64 -w0 |perl -pe "s/^/echo -n /g" |perl -pe "s/$/ \|base64 \-d \> \~\/\.vimrc/g" |xclip -selection clipboard
 
 " environment settings {
     " incase it is not set, it should be set by default
