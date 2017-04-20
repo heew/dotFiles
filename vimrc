@@ -21,6 +21,12 @@
 
     " shell, I use bash
     set shell=/bin/bash
+
+    " show full path to file we are editing in status line
+    set statusline=%F
+
+    " use two status lines, one for mode & one for file we are editing
+    set laststatus=2
 " }
 
 " indentation settings {
