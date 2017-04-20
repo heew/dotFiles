@@ -17,7 +17,7 @@
     endif
 
     " shell, I use bash
-    set shell=/usr/bin/bash
+    set shell=/bin/bash
 " }
 
 " indentation settings {
