@@ -1,5 +1,5 @@
 " one liner to update vimrc (paste and run after)
-" $ DATA_VIMRC=$(curl -sL https://raw.githubusercontent.com/heew/dotFiles/master/vimrc) && echo -n "$DATA_VIMRC" |base64 -w0 |perl -pe "s/^/echo -n /g" |perl -pe "s/$/ \|base64 \-d \> \~\/\.vimrc/g" |xclip -selection clipboard
+" $ cp ~/.vimrc ~/.vimrc.bak && DATA_VIMRC=$(curl -sL https://raw.githubusercontent.com/heew/dotFiles/master/vimrc) && echo -n "$DATA_VIMRC" |base64 -w0 |perl -pe "s/^/echo -n /g" |perl -pe "s/$/ \|base64 \-d \> \~\/\.vimrc/g" |bash
 
 " environment settings {
     " incase it is not set, it should be set by default
